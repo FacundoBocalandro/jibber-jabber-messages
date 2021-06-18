@@ -9,7 +9,4 @@ services:
     env_file:
       - database.env
     volumes:
-      - jjposts:/var/lib/postgresql/data
-volumes:
-  jjposts:
-    external: true
+      - jjmessages:/var/lib/postgresql/data
