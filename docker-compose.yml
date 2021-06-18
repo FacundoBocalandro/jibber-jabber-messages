@@ -10,3 +10,6 @@ services:
       - database.env
     volumes:
       - jjmessages:/var/lib/postgresql/data
+
+volumes:
+  jjmessages:
