@@ -40,8 +40,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-//        config.setAllowedOriginPatterns(Collections.singletonList("*"));
-        config.setAllowedOriginPatterns(List.of("http://localhost:3000", "http://jibber-jabber-proxy"));
+        config.setAllowedOriginPatterns(Collections.singletonList("*"));
+//        config.setAllowedOriginPatterns(List.of("http://localhost:3000", "http://jibber-jabber-proxy"));
         config.addAllowedHeader("*");
         config.addAllowedMethod("OPTIONS");
         config.addAllowedMethod("GET");
