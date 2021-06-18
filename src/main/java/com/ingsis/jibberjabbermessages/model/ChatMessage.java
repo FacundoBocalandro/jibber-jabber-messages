@@ -17,7 +17,7 @@ public class ChatMessage {
 
     private long senderId;
 
-    private LocalDateTime time;
+//    private LocalDateTime time;
 
     private long toId;
 
@@ -54,13 +54,13 @@ public class ChatMessage {
         this.senderId = senderId;
     }
 
-    public LocalDateTime getTime() {
-        return time;
-    }
-
-    public void setTime(LocalDateTime time) {
-        this.time = time;
-    }
+//    public LocalDateTime getTime() {
+//        return time;
+//    }
+//
+//    public void setTime(LocalDateTime time) {
+//        this.time = time;
+//    }
 
     public long getToId() {
         return toId;

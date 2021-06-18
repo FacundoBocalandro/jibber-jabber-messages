@@ -39,7 +39,7 @@ public class MessageService {
         Chat chat = chatRepository.findById(id);
         ChatMessage chatMessage = new ChatMessage();
         chatMessage.setContent(chatMessageDto.getContent());
-        chatMessage.setTime(chatMessageDto.getTime());
+//        chatMessage.setTime(chatMessageDto.getTime());
         chatMessage.setSenderId(id);
         chatMessage.setToId(to);
         chatMessage.setChat(chat);

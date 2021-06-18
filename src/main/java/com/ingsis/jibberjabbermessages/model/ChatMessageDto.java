@@ -7,15 +7,15 @@ public class ChatMessageDto {
 
     private long sender;
 
-    private LocalDateTime time;
+//    private LocalDateTime time;
 
     public ChatMessageDto() {
     }
 
-    public ChatMessageDto(String content, long sender, LocalDateTime time) {
+    public ChatMessageDto(String content, long sender) {
         this.content = content;
         this.sender = sender;
-        this.time = time;
+//        this.time = time;
     }
     public String getContent() {
         return content;
@@ -25,7 +25,7 @@ public class ChatMessageDto {
         return sender;
     }
 
-    public LocalDateTime getTime() {
-        return time;
-    }
+//    public LocalDateTime getTime() {
+//        return time;
+//    }
 }
