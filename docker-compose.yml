@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  jibber_jabber_messages_db:
+    container_name: jibber_jabber_messages_db
+    image: postgres:12
+    ports:
+      - 5434:5432
+    env_file:
+      - database.env
+    volumes:
+      - jjposts:/var/lib/postgresql/data
+volumes:
+  jjposts:
+    external: true
